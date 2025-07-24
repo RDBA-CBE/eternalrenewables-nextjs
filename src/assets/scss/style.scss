@@ -1,0 +1,783 @@
+/*!
+Theme Name: Sandbox - Modern & Multipurpose React Nextjs Template
+Theme URI:	https://sandbox-nextjs-theta.vercel.app
+Version:	3.4.1
+Author:		Ui Lib
+Author URI:	https://ui-lib.com
+*/
+
+// Bootstrap Functions
+@import "../../../node_modules/bootstrap/scss/functions";
+
+// Theme colors
+@import "theme-colors";
+
+// User variables
+@import "user-variables";
+
+// Theme variables
+@import "variables";
+
+// Bootstrap configuration
+@import "../../../node_modules/bootstrap/scss/variables";
+@import "../../../node_modules/bootstrap/scss/variables-dark";
+//@import "../../../node_modules/bootstrap/scss/maps";
+@import "theme/maps";
+@import "../../../node_modules/bootstrap/scss/mixins";
+@import "../../../node_modules/bootstrap/scss/utilities";
+
+// Theme configuration
+@import "theme/functions";
+@import "theme/mixins";
+@import "theme/utilities";
+@import "theme/root";
+
+// Bootstrap layout & components
+@import "bootstrap";
+
+// Theme layout & components
+@import "theme/theme";
+
+// User custom styles
+@import "user";
+
+
+@import url("https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&display=swap");
+:root,
+[data-bs-theme=light] {
+  --bs-pale-primary: #0a1905 !important;
+  --bs-pale-blue: #0a1905 !important;
+  --bg-soft-primary: #0a1905 !important;
+}
+
+.bg-soft-primary{
+ background-color:#0a1905 !important ; 
+}
+.bg-soft-blue{
+  background-color:#0a1905 !important ; 
+}
+.bg-green1{
+  background: #0a1905 !important;
+}
+.bg-gradient-primary {
+  background: linear-gradient(180deg, #0a1905, rgba(var(--bs-white-rgb), 0) 100%) !important;
+}
+.bg-orange1{
+  background: #b15720;
+}
+
+.text-green1{
+  color: #0a1905;
+}
+
+.text-orange1{
+  color: #b15720 ;
+}
+
+.bg-orange2{
+  background: #dea05c ;
+}
+
+// h1, h2, h3, h4, h5, h6 {
+//   font-family:'Incised 901', sans-serif;
+// }
+
+
+// p, div, li, a{
+//   font-family: "Archivo", sans-serif !important;
+// }
+
+
+h1, h2, h3, h4, h5, h6 {
+  font-family:'Monrope', sans-serif;
+}
+
+
+p, div, li, a{
+  font-family: "Monrope", sans-serif !important;
+}
+
+.btn-soft-primary {
+  --bs-btn-color: #b15720 !important;
+  --bs-btn-hover-color: var(--bs-primary);
+  --bs-btn-bg: #fff;
+  --bs-btn-border-color: #fff;
+  --bs-btn-hover-bg: var(--bs-pale-primary);
+  --bs-btn-hover-border-color: var(--bs-pale-primary);
+  --bs-btn-active-color: var(--bs-primary);
+  --bs-btn-active-bg: var(--bs-pale-primary);
+  --bs-btn-active-border-color: var(--bs-pale-primary);
+}
+
+.footer-img{
+    width: 250px !important;
+};
+
+p{
+    font-size: 16px;
+    color: #000;
+}
+
+.bg-yellow1{
+    background-color: #f5edd4;
+  }
+
+.EternalEPC.wrapper.angled.upper-end:before {
+    border-left-color: transparent !important;
+    border-right-width: 0 !important;
+    border-top-width: 4rem;
+    top: -4rem;
+  }
+
+ .EternalEPC.wrapper.angled.lower-start:after{
+    border-left-width:0 !important
+ }
+
+ .contactUs .wrapper.angled.upper-end:before{
+  border-right-width:0 !important
+ }
+
+ @media (min-width: 1200px) {
+  .mb-xl-26 {
+    margin-bottom: 24rem !important;
+  }
+}
+
+.display-1{
+ color: #fff !important;
+}
+
+.display-3-n{
+  font-size: 40px;
+}
+
+@media (max-width:768px){
+  .display-3-n{
+    font-size: 30px;
+  }
+}
+
+
+  .text-inverse a:not(.btn):hover{
+    color: #0a1905;
+  }
+
+  .navbar-expand-lg .navbar-collapse .nav-link{
+    color: #b15720 !important;
+  }
+
+  .navbar-expand-lg.navbar-light .dropdown:not(.dropdown-submenu)>.dropdown-toggle:after{
+    color: #b15720 !important;
+  }
+
+  .blog-banner.wrapper.angled.upper-end:before {
+  
+    border-right-width: 0 !important;
+
+}
+.home-project .post-category{
+  text-transform: none !important;
+}
+
+.approach-project img {
+  margin-bottom: 1rem;
+}
+
+// .eternalepc-project .img-fluid {
+//   margin-right: 1rem;
+
+// }
+
+@media (max-width: 991.98px) {
+
+.navbar-expand-lg .navbar-collapse .dropdown-menu .dropdown-item {
+  color: #165ea5;
+  padding-left: 1rem;
+  padding-top: 0.3rem;
+  padding-bottom: 0.3rem;
+}
+.navbar-expand-lg .navbar-collapse .nav-link:hover{
+  color: #fff !important;
+}
+
+}
+
+
+figure video {
+  width: 100%;
+  max-width: 100%;
+  height: auto !important;
+}
+
+.rounded video {
+  border-radius: 0.4rem;
+}
+
+.contact-form-iframe{
+  height: 600px;
+  //  overflow: hidden;
+}
+
+.contact-form-iframe-contact{
+  height: 600px;
+}
+
+.wpcf7 form.invalid .wpcf7-response-output, .wpcf7 form.unaccepted .wpcf7-response-output, .wpcf7 form.payment-required .wpcf7-response-output{display: none !important;}
+
+@media(max-width:"460px"){
+  .contact-form-iframe{
+    height: 385px !important;
+  }
+}
+
+// @media(max-width:"375px"){
+//   .contact-form-iframe{
+//     height: 380px !important;
+//      overflow: auto;
+//   }
+// }
+
+// .contact-form-iframe {
+//   width: 100%;
+//   height: 100vh; /* Full height for larger screens */
+//   border: none;
+// }
+
+/* On screens <= 375px */
+@media screen and (max-width: 375px) {
+  .contact-form-iframe {
+    height: 380px; /* Set smaller height */
+    overflow: auto;
+  }
+}
+
+.post-meta li:before{
+  background-color: #0a1905 !important;
+}
+
+
+.home-ban .swiper-pagination{
+  bottom: -40px !important;
+}
+
+.hm-eventsAndmedia .swiper-pagination{
+  bottom: -30px !important;
+}
+
+.rounded-pill{
+  border-radius: 10px !important;
+}
+
+.btn-soft-primary:hover{
+  color: #b15720 !important;
+  border: 1px solid #b15720 !important;
+}
+
+.career-page .btn-soft-primary{
+  border: 1px solid #b15720;
+}
+
+.career-page .btn-soft-primary:hover{
+  color: #fff !important;
+  border: 1px solid #fff !important;
+}
+
+.progress-wrap:after{
+  color: #fff !important;
+}
+
+.progress-wrap svg.progress-circle path{
+  stroke: #fff !important;
+}
+
+.accordion-wrapper .card-header button{
+  color: #b15720;
+}
+.accordion-wrapper .card-header button:before{
+  color: #b15720;
+}
+
+button.hamburger:before, button.hamburger span, button.hamburger:after{
+    background: #b15720;
+}
+
+@media (min-width:700px){
+.hm-HowWeDo{
+  padding-top: 120px !important;
+  padding-bottom: 25px !important;
+}
+}
+
+@media (max-width:1100px){
+.hm-HowWeDo{
+// padding-top: 200px !important;
+}
+}
+
+@media (max-width:900px){
+.hm-HowWeDo{
+// padding-top: 120px !important;
+}
+}
+
+
+@media (max-width:700px){
+.hm-HowWeDo::before {
+top: 380px !important;
+}
+}
+.text-white{color: #fff !important;}
+
+// @media (max-width:768px){
+//   .home-how-we-do{font-size: 13px;}
+//   .how-we-do-title{font-size: 26px;}
+//   .how-we-do-subtitle{font-size: 13px;}
+//   .how-we-do-heading{font-size: 15px;}
+// }
+@media (min-width: 700px) and (max-width: 900px) {
+  .custom-col-6 {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+}
+    // background: linear-gradient(186deg, #0a1905 4%, #dca14c 26%, #90442c 50%, #90442c 100%);
+.text-yellow h3{color: #fbbc05;}
+
+h1.elementor-heading-title{}
+.project-fig img{margin: 0px; padding: 0px; width: 100%; height: auto}
+.paragraph p { font-size: 16px; color: #fff;}
+.heading-black h1, h2, h3, h4, h5, h6 {
+  color: #000;
+}
+
+
+
+.what-we-do {
+  animation-name: fadeIn;
+  animation-delay: 600ms;
+  animation-fill-mode: both;
+  animation-duration: 700ms;
+  animation-direction: normal;
+  animation-timing-function: ease;
+  position: relative;
+}
+p {
+    font-size: 16px;
+    
+}
+
+.why-choose-us {
+  position: relative;
+}
+.why-choose-side-image {top:-2.5rem;right:-2.7rem;z-index: -1;}
+.why-choose-us-figure video {
+  width: 100%;
+  max-width: 100%;
+  height: auto !important;
+  z-index: 1;
+}
+.position-style {
+  position: relative !important;
+}
+.font-size-inner h3{
+  font-size: 1.4rem !important;
+  color: #fff;
+}
+.what-we-do-height {
+  min-height: 60vh !important ;
+}
+.what-we-do-banner {
+    background-image: url('https://irepute.co.in/eternal/demo/wp-content/uploads/2025/05/what-we-do.jpg'); /* This sets the background image */
+    background-size: cover; /* Ensures the image covers the entire area */
+    background-position: center center; /* Centers the background image */
+    background-repeat: no-repeat; /* Prevents the background from repeating */
+}
+.what-we-do-anim { animation-name:fadeIn;animation-delay:600ms;animation-fill-mode:both;animation-duration:700ms;animation-direction:normal;animation-timing-function:ease}
+.what-we-do-subheading h3 {color: #fff;}
+.what-we-do-heading h3 {font-size: 26.5px ;color:#0a1905;}
+@media (min-width: 1200px) {.what-we-do-heading h3 {font-size: 2rem }}
+@media (min-width: 992px) {.position-stick {position: sticky;}}
+.position-stick {top: 8rem;}
+.how-we-do p{font-size: 22px;color: #fff;}
+.how-we-do-container {--bs-gutter-x: 1.5rem;--bs-gutter-y: 0;width: 100%;padding-right: calc(var(--bs-gutter-x) * .5);padding-left: calc(var(--bs-gutter-x) * .5);margin-right: auto;margin-left: auto;}
+.operation-bg {
+  background-image: url('https://irepute.co.in/eternal/demo/wp-content/uploads/2025/05/image-4.jpg'); /* This sets the background image */
+  background-size: cover; /* Ensures the image covers the entire area */
+  background-position: center center; /* Centers the background image */
+  background-repeat: no-repeat; /* Prevents the background from repeating */
+}
+
+  @media (min-width: 1200px) {
+    .operation-heading h3 {
+        font-size: 2rem;
+    }
+}
+
+.operation-heading h3 {
+    font-size: calc(1.325rem + .9vw);
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.why-choose-us {
+  background-image: url('https://irepute.co.in/eternal/demo/wp-content/uploads/2025/05/vision.jpg'); /* This sets the background image */
+  background-size: cover; /* Ensures the image covers the entire area */
+  background-position: center center; /* Centers the background image */
+  background-repeat: no-repeat; /* Prevents the background from repeating */
+ 
+}
+.eternal-energy h3{font-size: 40px;color: #0a1905;}
+.how-we-do-icon img{max-height:40px}
+.how-we-do-subheading h4 {color: #fff;font-size: 19px;}
+.epc-heading h3{font-size: 40px;color: #fff;}
+.epc-image img{max-height:50px;width:auto}
+.project-development h2 {font-size: 40px;color: #0a1905;}
+.project-dev p{font-size: 16px;color: #000;margin-bottom: 0px;}
+.eternal-epc-bg {
+  background-image: url('https://irepute.co.in/eternal/demo/wp-content/uploads/2025/05/external-epc.jpg'); /* This sets the background image */
+  background-size: cover; /* Ensures the image covers the entire area */
+  background-position: center center; /* Centers the background image */
+  background-repeat: no-repeat; /* Prevents the background from repeating */
+}
+.operation-subheading h2 {font-size: 16px;color: #fff;}
+.smart-energy h4{color: #b15720;margin-bottom: 1px;}
+.smart-energy-para p{font-size: 16px;color: #000;margin-bottom: 1px;}
+.risk-management p{margin-bottom: 20px;}
+.why-choose-eternal h2{color: #fff;font-size: 40px;}
+.why-choose-eternal-epc h4{font-size: 20px;color: #fff;}
+.contact-us-bg {background-image: url(https://irepute.co.in/eternal/demo/wp-content/uploads/2025/05/bg22.png);}
+.career-heading h1{font-size: 15px;color: #fff;}
+.career-subheading h3{font-size: 22px;color: #fff;}
+.contact-us-bg-header {background-image: url(https://irepute.co.in/eternal/demo/wp-content/uploads/2025/05/contactus-bg.jpg);}
+.contact-heading h1{font-size: 45px;color: #fff;}
+.contact-us-map {border:0;width:100%;height:100%}
+.address-heading h5 {font-size: 18px;color: #fff;}
+.contact-para p{margin-bottom: 7px;font-size: 16px;color: #000;}
+.map-height {height: 100%;min-height: 15rem;}
+.elementor-widget-container-map-height {height: 100% !important;min-height: 15rem;}
+.shape-1.rellax-1 {
+    position: absolute;
+    z-index: 1;
+}
+.safety-image-bg{
+  position: relative;
+  z-index: 2;
+}
+.our-approach-side {
+      position: absolute;
+   
+}
+.map-style{border:0;width:100%;height:100%}
+
+ @media (max-width: 768px) {
+    .img-width{padding: top 20px !important;width: 100%;}
+}
+.expert-team-image img{width: 100%;}
+.our-approach p{color: #000;margin-bottom: 20px;}
+
+/*Wordpress*/
+
+
+.solar-project-card {
+  background-size: cover;
+  background-position: center;
+  height: 400px;
+  position: relative;
+  // border-radius: 10px;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+.bottom-sec .pad{
+  padding-right: 1px !important;
+}
+
+.card-padding{
+  padding: 0 1px !important;
+}
+
+.solar-projects-container .border-radius{
+  border-bottom-left-radius: 10px;
+  border-top-left-radius: 10px;
+}
+
+.border-radius-left{
+
+  border-bottom-right-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+
+
+
+.solar-project-overlay {
+  background: #00000061;
+  color: white;
+  position: absolute;
+  bottom: 0;
+  padding: 20px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+}
+
+// .solar-project-overlay::before{
+//   content: "";
+//   position: absolute;
+//   width: 100%;
+//   height: 100%;
+//   top: 0;
+//   left: 0;
+//   background-image: linear-gradient(180deg, var(--tw-gradient-stops));
+// }
+
+.solar-project-location {
+
+  font-size: 15px;
+  margin-bottom: 5px;
+  text-transform: uppercase;
+  font-weight: 500;
+      letter-spacing: -0.2px;
+      color: #fbbc05;
+}
+
+.solar-project-title {
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  line-height: 40px;
+}
+
+.solar-project-subtitle {
+  font-size: 18px;
+  font-weight: 500;
+  color: #d8d8d8;
+  text-decoration: underline #fbbc05;
+   text-underline-offset: 4px;
+}
+.pro-detail .img-con img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.pro-detail .content-con{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  height: 100%;
+}
+.pro-detail .content-con p {
+  padding-left: 50px;
+  font-size: 22px;
+}
+
+.battery-info-section {
+  // background-color: #fff;
+}
+
+.battery-quote {
+  font-size: 22px;
+  font-weight: 600;
+
+  max-width: 800px;
+  margin: auto;
+}
+
+.battery-details {
+  font-size: 0.95rem;
+  color: #333;
+}
+
+.battery-detail-row strong {
+  font-weight: 600;
+  font-size: 16px;
+}
+.battery-detail-row span {
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.battery-info-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+
+
+
+
+
+/* Media Query */
+@media (max-width: 768px) {
+  .solar-project-card {
+    height: 300px;
+  }
+
+  .solar-project-title {
+    font-size: 1.4rem;
+  }
+
+  .solar-project-subtitle {
+    font-size: 0.9rem;
+  }
+  .card-padding{
+  padding: 1px 0  !important;
+}
+
+.bottom-sec .pad{
+  padding-right: 0 !important;
+  padding-bottom: 1px !important;
+}
+
+.border-radius{
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+    border-bottom-left-radius: 0px !important;
+  
+}
+
+.border-radius-left{
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border-top-right-radius: 0px !important;
+}
+.pro-detail .content-con{
+  width: 100% !important;
+}
+.pro-detail .content-con p {
+  padding: 0px  0 20px !important;
+  // padding-top: 20px;
+}
+}
+
+/* Media Query for Smaller Screens */
+@media (max-width: 576px) {
+  .battery-detail-row {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .battery-detail-row strong,
+  .battery-detail-row span {
+    display: block;
+    margin-bottom: 6px;
+  }
+
+  .battery-quote {
+    font-size: 1rem;
+  }
+  .pro-detail .content-con p{
+    padding-top: 20px !important;
+  }
+}
+
+.dropdown-item:hover, .dropdown-item:focus{
+ color: #b15720;
+}
+.projects-title h1{font-size: 45px;color: #fff;}
+.project-subtitle p{font-size: 22px;color: #fff;}
+.card-bg-image-1 {background-image: url(https://irepute.co.in/eternal/demo/wp-content/uploads/2025/07/karur-solar-park-I.jpg);}
+.card-bg-image-2 {background-image: url(https://irepute.co.in/eternal/demo/wp-content/uploads/2025/07/karur-solar-park-II.jpg);}
+.card-bg-image-3 {background-image: url(https://irepute.co.in/eternal/demo/wp-content/uploads/2025/07/trichy-solar-park.jpg);}
+.card-bg-image-4 {background-image: url(https://irepute.co.in/eternal/demo/wp-content/uploads/2025/07/namakkal-solar-park-I.jpg);}
+.card-bg-image-5 {background-image: url(https://irepute.co.in/eternal/demo/wp-content/uploads/2025/07/namakkal-solar-park-II.jpg);}
+.card-bg-image-6 {background-image: url(https://irepute.co.in/eternal/demo/wp-content/uploads/2025/07/thiruvannamalai-solar-park.jpg);}
+.card-bg-image-7 {background-image: url(https://irepute.co.in/eternal/demo/wp-content/uploads/2025/07/pazhani-solar-park.jpg);}
+// .card-bg-image-1 {background-image: url(https://irepute.co.in/eternal/demo/wp-content/uploads/2025/06/banner-1.jpg);}
+.solar-project-location p{font-size: 15px;margin-bottom: 5px;text-transform: uppercase;font-weight: 500;letter-spacing: -.2px;color: #fbbc05;}
+.solar-project-title h3{ font-size: 1.8rem;font-weight: 700; margin-bottom: 20px;line-height: 40px;color: #fff;}
+.solar-project-subtitle a{font-size: 18px;font-weight: 500; color: #d8d8d8; -webkit-text-decoration: underline #fbbc05; text-decoration: underline #fbbc05;text-underline-offset: 4px;
+}
+.project-detail-banner-1 {
+  background-image: url(https://irepute.co.in/eternal/demo/wp-content/uploads/2025/07/banner-img.jpg);
+  background-size: cover; 
+  background-position: center center;
+  background-repeat: no-repeat;
+ 
+}
+.project-detail-banner-2 {
+  background-image: url(https://irepute.co.in/eternal/demo/wp-content/uploads/2025/06/banner-1.jpg);
+  background-size: cover; 
+  background-position: center center;
+  background-repeat: no-repeat;
+ 
+}
+.project-detail-banner-3 {
+  background-image: url(https://irepute.co.in/eternal/demo/wp-content/uploads/2025/06/banner-1.jpg);
+  background-size: cover; 
+  background-position: center center;
+  background-repeat: no-repeat;
+ 
+}
+.project-detail-banner-4 {
+  background-image: url(https://irepute.co.in/eternal/demo/wp-content/uploads/2025/06/banner-1.jpg);
+  background-size: cover; 
+  background-position: center center;
+  background-repeat: no-repeat;
+ 
+}
+.project-detail-banner-5 {
+  background-image: url(https://irepute.co.in/eternal/demo/wp-content/uploads/2025/06/banner-1.jpg);
+  background-size: cover; 
+  background-position: center center;
+  background-repeat: no-repeat;
+ 
+}
+.project-detail-banner-6 {
+  background-image: url(https://irepute.co.in/eternal/demo/wp-content/uploads/2025/06/banner-1.jpg);
+  background-size: cover; 
+  background-position: center center;
+  background-repeat: no-repeat;
+ 
+}
+.project-detail-banner-7 {
+  background-image: url(https://irepute.co.in/eternal/demo/wp-content/uploads/2025/06/banner-1.jpg);
+  background-size: cover; 
+  background-position: center center;
+  background-repeat: no-repeat;
+ 
+}
+
+.project-banner {
+  background-image: url(https://irepute.co.in/eternal/demo/wp-content/uploads/2025/06/banner-1.jpg);
+  background-size: cover; 
+  background-position: center center;
+  background-repeat: no-repeat;
+ 
+}
+.project-detail-quote p{
+  font-size: 22px;
+  font-weight: 600;
+  max-width: 800px;
+  margin: auto;
+  color: #fff;
+}
+.content-space {
+    justify-content: space-between !important;
+}
+.content-gap {justify-content: center;}
+.image-radius img{border-radius: 8px;}
+.proj-detail-heading h2{color: #fff !important;font-size: 40px;text-align:center}
+.proj-detail-heading-down h2{color: #fff !important;font-size: 26px;}
+.proj-count span{border-bottom:1px solid #fbbc05;}
+.image img{border-radius: 10px;}
+.elementor-button-text a{
+color:#b15720 !important
+}
+.project-border {
+    border-radius: 10px;
+}
+.project-landing-bg img{width:100% !important}
+
+.elementor-widget-container-map-height {height: 100% !important;}
+.award-image img{
+  max-width:100%;
+  height: auto !important;
+}
