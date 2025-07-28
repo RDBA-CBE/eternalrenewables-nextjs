@@ -35,6 +35,10 @@ export default function Footer12() {
                     <p className='mb-0  mb-md-2 text-white fw-normal'>
                       Copyrights 2025 © Eternal Renewables.{' '}
                       <br className='d-none d-lg-block' />
+                      Concept by{' '}
+                      <a href='https://irepute.in' target='_blank'>
+                        repute
+                      </a>
                     </p>
                     <div className='mb-0 mb-md-2 text-white fw-normal d-flex align-items-center gap-2'>
                       <span>Follow us:</span>
