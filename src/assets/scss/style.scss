@@ -221,6 +221,12 @@ figure video {
 .contact-form-iframe-contact{
   height: 600px;
 }
+@media (max-width: 768px){
+  .contact-form-iframe-contact{
+  height: 700px;
+}
+}
+
 
 .wpcf7 form.invalid .wpcf7-response-output, .wpcf7 form.unaccepted .wpcf7-response-output, .wpcf7 form.payment-required .wpcf7-response-output{display: none !important;}
 
