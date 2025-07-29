@@ -4,9 +4,9 @@ import Accordion from "components/reuseable/accordion";
 const accordions = [
   {
     no: "One",
-    expand: true,
+    expand: false,
     heading: "Personal Safety",
-    body: "FWe prioritize the well-being of our employees, partners, and communities by adopting necessary safety measures on our work site. We provide rigorous training, continuously assess risks and empower every individual to take responsibility for their own safety and that of those around them."
+    body: "We prioritize the well-being of our employees, partners, and communities by adopting necessary safety measures on our work site. We provide rigorous training, continuously assess risks and empower every individual to take responsibility for their own safety and that of those around them."
   },
   {
     no: "Two",
