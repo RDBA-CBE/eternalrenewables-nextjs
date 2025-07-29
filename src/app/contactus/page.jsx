@@ -42,15 +42,26 @@ export default function ContactUs() {
           },
         }
       );
+      const res1 = await axios.get(
+        'https://irepute.co.in/eternal/demo/wp-json/wp/v2/pages',
+        {
+          params: {
+            slug: 'contact-us-2',
+            _embed: true,
+          },
+        }
+      );
 
       if (res?.data?.length > 0) {
         const pageData = res.data[0];
+        const pageData1=res1.data[0];
         const featuredImage =
           pageData._embedded?.['wp:featuredmedia']?.[0]?.source_url;
         const pageTitle = pageData.title?.rendered;
 
         setState({
           pageData: pageData.content?.rendered,
+          pageData1: pageData1.content?.rendered,
           backgroundImage: featuredImage,
           pageTitle: pageTitle,
         });
@@ -61,7 +72,7 @@ export default function ContactUs() {
       console.log('error: ', error);
     }
   };
-
+  console.log('pageData1',state.pageData1);
   const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
@@ -235,7 +246,9 @@ export default function ContactUs() {
         </div>*/}
 
         <div className='container-card'>
-          <div
+          <div dangerouslySetInnerHTML={{ __html: state.pageData1 }} />
+
+          {/* <div
             className='card image-wrapper bg-full bg-image  mb-12'
             style={{ backgroundImage: 'url(/img/photos/bg22.png)' }}
           >
@@ -257,14 +270,14 @@ export default function ContactUs() {
 
                 <div className='d-flex justify-content-center'>
                   <span>
-                    <a className='btn btn-lg btn-soft-primary rounded-pill py-2'>
+                    <a className='btn btn-lg btn-soft-primary rounded-pill py-2' href='tel:+919597788792'>
                       Get Started
                     </a>
                   </span>
                 </div>
               </div>
             </div>
-          </div>
+          </div> */}
         </div>
       </main>
 
