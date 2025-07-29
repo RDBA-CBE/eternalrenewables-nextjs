@@ -45,7 +45,7 @@ export default function OurProjects() {
         </div>
 
         <div className="text-center mt-10">
-          <NextLink title="Start a Project" href="/projects" className="btn btn-lg btn-soft-primary rounded-pill" />
+          <NextLink title="know More" href="/projects" className="btn btn-lg btn-soft-primary rounded-pill" />
         </div>
       </div>
     </section>
