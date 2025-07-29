@@ -197,7 +197,7 @@ export default function Career() {
 
                 width="100%"
                 height="600px"
-                className="contact-form-iframe"
+                className="career-form-iframe"
                  style={{ border: "none" }}
                   scrolling={isMobile ?"yes":"no"}
                   

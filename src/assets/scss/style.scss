@@ -219,14 +219,47 @@ figure video {
 }
 
 .contact-form-iframe-contact{
-  height: 600px;
+  height: 500px;
 }
 @media (max-width: 768px){
   .contact-form-iframe-contact{
   height: 700px;
 }
 }
+.career-form-iframe{
+  height: 600px;
+  //  overflow: hidden;
+}
 
+.career-form-iframe-contact{
+  height: 600px;
+}
+@media (max-width: 768px){
+  .career-form-iframe{
+  height: 800px;
+}
+}
+@media (max-width: 768px){
+.address-space{
+    padding: 0.75rem !important;
+}
+}
+@media (max-width: 400px) {
+    .address-space {
+        padding: 0.2rem !important;
+    }
+}
+
+@media (min-width: 992px) and (max-width:1400px){
+.google-map{
+    height: 640px !important;
+}
+}
+@media (min-width:1401px){
+  .google-map{
+    height: 600px !important;
+}
+}
 
 .wpcf7 form.invalid .wpcf7-response-output, .wpcf7 form.unaccepted .wpcf7-response-output, .wpcf7 form.payment-required .wpcf7-response-output{display: none !important;}
 
