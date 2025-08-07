@@ -4,13 +4,13 @@ import DropdownToggleLink from 'components/reuseable/links/DropdownToggleLink';
 
 export default function MediaNavItem() {
   const mediaNavigation = [
-    { id: 1, url: 'https://irepute.co.in/eternal/demo/wp-content/uploads/2025/07/Brochure-Design.pdf', title: 'Download' },
+    { id: 1, url: 'https://slategray-tapir-928038.hostingersite.com/wp-content/uploads/2025/07/Brochure-Design.pdf', title: 'Download' },
   ];
 
   const mediaMblNavigation = [
     { id: 1, url: '/media', title: 'Overview' },
 
-    { id: 2, url: 'https://irepute.co.in/eternal/demo/wp-content/uploads/2025/07/Brochure-Design.pdf', title: 'Download' },
+    { id: 2, url: 'https://slategray-tapir-928038.hostingersite.com/wp-content/uploads/2025/07/Brochure-Design.pdf', title: 'Download' },
   ];
   return (
     <li className='nav-item dropdown'>

@@ -37,7 +37,7 @@ export default function Career() {
   const slugData = async () => {
     try {
       const res = await axios.get(
-        "https://irepute.co.in/eternal/demo/wp-json/wp/v2/pages",
+        "https://slategray-tapir-928038.hostingersite.com/wp-json/wp/v2/pages",
         {
           params: {
             slug: "career",
@@ -192,7 +192,7 @@ export default function Career() {
                 Reach out to us from our contact form and we will get back to you shortly.
               </p>
               <iframe
-                src="https://irepute.co.in/eternal/demo/career-1/"
+                src="https://slategray-tapir-928038.hostingersite.com/career-1/"
                 
 
                 width="100%"

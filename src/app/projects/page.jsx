@@ -26,7 +26,7 @@ export default function Demo34() {
   const slugData = async () => {
     try {
       const res = await axios.get(
-        'https://irepute.co.in/eternal/demo/wp-json/wp/v2/pages',
+        'https://slategray-tapir-928038.hostingersite.com/wp-json/wp/v2/pages',
         {
           params: {
             slug: 'projects',
