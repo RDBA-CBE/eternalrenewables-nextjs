@@ -34,7 +34,7 @@ export default function ContactUs() {
   const slugData = async () => {
     try {
       const res = await axios.get(
-        'https://irepute.co.in/eternal/demo/wp-json/wp/v2/pages',
+        'https://slategray-tapir-928038.hostingersite.com/wp-json/wp/v2/pages',
         {
           params: {
             slug: 'contactus',
@@ -43,7 +43,7 @@ export default function ContactUs() {
         }
       );
       const res1 = await axios.get(
-        'https://irepute.co.in/eternal/demo/wp-json/wp/v2/pages',
+        'https://slategray-tapir-928038.hostingersite.com/wp-json/wp/v2/pages',
         {
           params: {
             slug: 'contact-us-2',
@@ -224,7 +224,7 @@ export default function ContactUs() {
             </p>
 
             <iframe
-              src='https://irepute.co.in/eternal/demo/contact-us-1/'
+              src='https://slategray-tapir-928038.hostingersite.com/contact-us-1/'
               width='100%'
               className='contact-form-iframe-contact'
               // style="border: none;"
